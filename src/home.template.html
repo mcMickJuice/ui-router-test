@@ -1,0 +1,6 @@
+<div>
+    Home Component - {{vm.message}}
+    <div ng-repeat="type in vm.teamTypes" ui-sref="app.team.detail({teamType: type})">
+        {{type}}    
+    </div>
+</div>

@@ -1,0 +1,11 @@
+<div>
+    <div class="header">
+        hello this is header
+        <div ng-repeat="type in vm.teamTypes" ng-click="vm.selectType(type)" class="{{vm.selectedType === type ? 'active' : ''}}">
+            {{type}}
+        </div>
+        <div>
+            <ui-view></ui-view>
+        </div>
+    </div>
+</div>
